@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<?import javafx.scene.image.ImageView?>
+<VBox fx:controller="UIController" xmlns:fx="http://javafx.com/fxml" fx:id="rootContainer">
+
+    <GridPane fx:id="layout">
+
+        <VBox GridPane.columnIndex="0" GridPane.rowIndex="0" fx:id="queueView">
+            <Label fx:id="queueLabel">Queue</Label>
+            <ListView fx:id="queueList" VBox.vgrow="ALWAYS"></ListView>
+        </VBox>
+
+        <ScrollPane GridPane.columnIndex="1" GridPane.rowIndex="0" fx:id="explorerViewContainer">
+        <TilePane alignment="CENTER" fx:id="explorerView">
+
+        </TilePane>
+        </ScrollPane>
+
+        <HBox GridPane.columnIndex="0" GridPane.rowIndex="1" fx:id="loadedSongData">
+            <ImageView fx:id="loadedSongImage"></ImageView>
+            <Label fx:id="loadedSongTitle">No Loaded Song</Label>
+        </HBox>
+
+        <HBox GridPane.columnIndex="1" GridPane.rowIndex="1" fx:id="songControls">
+            <Slider min="0" max="1" value="0" HBox.hgrow="ALWAYS" fx:id="songSeeker"></Slider>
+            <Button fx:id="playButton">></Button>
+        </HBox>
+
+    </GridPane>
+
+    <stylesheets>
+        <URL value="@ui.css" />
+    </stylesheets>
+
+</VBox>

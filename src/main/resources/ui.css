@@ -1,0 +1,36 @@
+root {
+    display: block;
+}
+
+#rootContainer {
+    -fx-background-color: #121212;
+}
+
+.label {
+    -fx-text-fill: white;
+}
+
+#queueLabel {
+    -fx-font-size: 2em;
+    -fx-alignment: center;
+}
+
+#explorerView {
+    -fx-background-color: #121212;
+}
+#explorerViewContainer {
+    -fx-background-color: none;
+}
+
+#queueView {
+    -fx-background-color: #010101;
+}
+
+#queueList {
+    -fx-background-color: none;
+}
+
+.list-cell {
+    -fx-background-color: none;
+    -fx-text-fill: white;
+}
